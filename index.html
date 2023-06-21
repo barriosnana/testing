@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Segundo formulario</title>
+  </head>
+
+
+<script>  
+  function valiateform(){  
+    var name=document.miform.nombre.value;  
+    var password=document.miform.cont.value;  
+    if (name==null || name=="")
+    {  
+      console.log("hola mundo");  
+      alert("El nombre no puede estar en blanco");  
+      return false;  
+    }
+    else if(password.length<6)
+    {  
+      console.log(name.length);  
+      alert("La contraseña debe tener como minimo 6 caracteres.");  
+      return false;  
+      }  
+  }  
+</script>  
+
+
+<body>  
+  <h1> Segundo formulario </h1>
+
+<form name="miform" method="post" action="form2.html" onsubmit="return valiateform()" >  
+  
+  Nombre: <input type="text" name="nombre"><br/>
+
+  Apellido: <input type="text" name="nombre"><br/>
+
+  Email:<br>
+  <input type="email" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"><br/>
+
+
+  Fecha de Nacimiento: <br> 
+  <input type="date" name="date"><br/>
+
+  Edad: <br>
+  <input type="number" name="Edad"><br/>
+
+    DNI:<br>
+  <input type="text" name="dni" pattern="\d{6,8}" title="Ingresa un número de DNI válido de 6 a 8 dígitos" minlength="6" maxlength="8" required><br>
+
+  Nacionalidad: <br>
+  <select name="nacionalidad">
+    <option value="">Selecciona una opción</option>
+    <option value="AF">Argentina</option>
+    <option value="AL">Venezolana</option>
+    <option value="ZW">Uruguaya</option>
+    <option value="ZW">Brasileña</option>
+    <option value="ZW">Colombiana</option>
+    <option value="ZW">Peruana</option>
+    <option value="ZW">Chilena</option>
+    <option value="ZW">Paraguaya</option>
+  </select><br/>
+
+  Género: <br>
+  <input type="checkbox" name="Género">
+  <label for="casado">Hombre</label><br/>
+  <input type="checkbox" name="Género">
+  <label for="casado">Mujer</label><br/>
+  <input type="checkbox" name="Género">
+  <label for="casado">Prefiero no contestar</label><br/>
+
+
+  Estado Civil <br>
+  <input type="radio" id="casado" name="estado_civil" value="casado">
+  <label for="casado">Casado/a</label><br/>
+  <input type="radio" id="soltero" name="estado_civil" value="soltero">
+  <label for="soltero">Soltero/a</label><br/>
+  <input type="radio" id="divorciado" name="estado_civil" value="divorciado">
+  <label for="divorciado">Divorciado/a</label><br/>
+  <input type="radio" id="viudo/a" name="estado_civil" value="viudo">
+  <label for="viudo">Viudo/a</label><br/> 
+
+  Teléfono Fijo:<br>
+  <input type="number" name="number"><br/>
+
+  Celular:<br>
+  <input type="number" name="number"><br/>
+
+  Dirección:<br>
+  <input type="text" name="direccion"><br/>
+
+    Código Postal:<br>
+  <input type="text" name="codigo_postal" pattern="\d{4}" title="Ingresa un código postal válido de 4 dígitos" required><br>
+  
+  Provincia:<br>
+  <select name="provincia">
+    <option value="">Selecciona una opción</option>
+    <option value="AF">Capital Federal</option>
+    <option value="AL">Buenos Aires</option>
+    <option value="ZW">Otra Provincia</option>
+  </select><br/>
+
+  País:<br>
+  <select name="pais">
+    <option value="">Selecciona una opción</option>
+    <option value="AF">Argentina</option>
+    <option value="AL">Venezuela</option>
+    <option value="ZW">Uruguay</option>
+    <option value="ZW">Brasil</option>
+    <option value="ZW">Colombia</option>
+    <option value="ZW">Peru</option>
+    <option value="ZW">Chile</option>
+    <option value="ZW">Paraguay</option>
+  </select><br/>
+
+  Nivel de Estudios:<br>
+  <input type="radio" id="sin_estudios" name="nivel_de_estudios" value="sin_estudios">
+  <label for="sin_estudios">Sin Estudios</label><br/>
+  <input type="radio" id="educacion_basica" name="nivel_de_estudios" value="educacion_basica">
+  <label for="educacion_basica">Primaria</label><br/>
+  <input type="radio" id="bachiller" name="nivel_de_estudios" value="bachiller">
+  <label for="bachiller">Bachiller</label><br/>
+  <input type="radio" id="universitario" name="nivel_de_estudios" value="universitario">
+  <label for="universitario">Universitario</label><br/>
+
+  ¿Trabaja actualmente?: <br>
+  <input type="radio" id="si" name="trabaja_actualmente" value="si">
+  <label for="si">Si</label><br/>
+  <input type="radio" id="no" name="trabaja_actualmente" value="no">
+  <label for="no">No</label><br/>
+
+  ¿Busca trabajo?: <br>
+  <input type="radio" id="si" name="busca_trabajo" value="si">
+  <label for="si">Si</label><br/>
+  <input type="radio" id="no" name="busca_trabajo" value="no">
+  <label for="no">No</label><br/>
+
+  <br>
+  <input type="submit" value="Enviar">  
+  
+</form>  
+<a href="www.google.com.ar" >link a google</a>
+
+<div class="miDiv">
+<a href="www.javierblanco.ar" >link a javier</a>
+javier
+</div>
+<img src="descarga.png">
+</body>
+</html>
